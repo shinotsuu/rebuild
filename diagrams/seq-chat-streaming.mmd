@@ -1,0 +1,18 @@
+sequenceDiagram
+  participant B as Browser
+  participant F as Frontend
+  participant A as API
+  participant P as Provider
+
+  B->>F: Send message
+  F->>A: POST /api/chats/{id}/messages (SSE)
+  A->>P: Start streaming completion
+  P-->>A: token...
+  A-->>F: event: token (delta)
+  F-->>B: render appended text
+  loop until done
+    P-->>A: token
+    A-->>F: token
+  end
+  A-->>F: event: done
+  Note over B,F: Stop button closes SSE; WS later supports cancel signal

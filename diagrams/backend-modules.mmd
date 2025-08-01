@@ -1,0 +1,36 @@
+flowchart TB
+  subgraph Routers
+    Auth[/auth/]
+    Users[/users/]
+    Chats[/chats/]
+    Models[/models/]
+    Knowledge[/knowledge/]
+    Retrieval[/retrieval/]
+    FilesR[/files/]
+    Notes[/notes/]
+    Admin[/admin/]
+  end
+
+  Providers[Providers Service (Ollama/OpenAI/Azure)]
+  Embeddings[Embeddings Service]
+  RAG[RAG Pipeline]
+  Storage[Storage Service (FS/S3)]
+  ORM[SQLAlchemy Models]
+  Vectors[Vector DB Client]
+  SSE[SSE/WebSocket Streamer]
+  Redis[(Redis optional)]
+
+  Chats --> SSE
+  SSE --> Redis
+  Chats --> Providers
+  Models --> Providers
+  Retrieval --> RAG
+  RAG --> Embeddings
+  RAG --> Vectors
+  Knowledge --> Storage
+  FilesR --> Storage
+  Notes --> Providers
+  Auth --> ORM
+  Users --> ORM
+  Chats --> ORM
+  Admin --> ORM

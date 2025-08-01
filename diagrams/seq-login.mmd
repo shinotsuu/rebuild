@@ -1,0 +1,9 @@
+sequenceDiagram
+  participant B as Browser
+  participant F as Frontend (SvelteKit)
+  participant A as API (FastAPI)
+  B->>F: Open /login
+  B->>A: POST /api/auth/login {email, password}
+  A->>A: Verify password, create session/JWT
+  A-->>B: 200 Set-Cookie session / or {token}
+  B->>F: Redirect to /chat

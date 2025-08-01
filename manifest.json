@@ -1,0 +1,271 @@
+{
+  "generated_at": "2025-08-01T12:14:36Z",
+  "version": "1.0.0",
+  "items": [
+    {
+      "title": "Rebuild Plan and Architecture",
+      "description": "Executive summary, architecture, phased plan, setup, workflows, APIs, data model, RAG, streaming, security, ops, testing, deployment, roadmap",
+      "path": "rebuild.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "API Reference",
+      "description": "REST endpoints for MVP with auth, pagination, error shapes and examples",
+      "path": "docs/api-reference.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Data Model",
+      "description": "ERD, tables, relationships, constraints, indices, migrations",
+      "path": "docs/data-model.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "RAG Pipeline",
+      "description": "Ingestion, chunking, embeddings, indexing, retrieval, reranker, prompt assembly",
+      "path": "docs/rag-pipeline.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Streaming Protocols",
+      "description": "SSE protocol and future WebSocket upgrade with stop/cancel",
+      "path": "docs/streaming-protocols.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Security and Compliance",
+      "description": "AuthN/Z, CORS/CSRF, RBAC, secrets, uploads, DNT, compliance notes",
+      "path": "docs/security-and-compliance.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Operations and Deployment",
+      "description": "Environments, docker-compose, K8s, observability, scaling, releases",
+      "path": "docs/operations-and-deployment.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Testing Strategy",
+      "description": "Unit/integration/e2e, fixtures, CI gates, coverage targets",
+      "path": "docs/testing-strategy.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Glossary",
+      "description": "System terminology reference",
+      "path": "docs/glossary.md",
+      "type": "doc",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: System Context (source)",
+      "description": "Mermaid source for system context diagram",
+      "path": "diagrams/system-context.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: System Context (PNG)",
+      "description": "PNG export of system context diagram",
+      "path": "diagrams/system-context.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: System Context (SVG)",
+      "description": "SVG export of system context diagram",
+      "path": "diagrams/system-context.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Backend Modules (source)",
+      "description": "Mermaid source of backend modules and routers",
+      "path": "diagrams/backend-modules.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: Backend Modules (PNG)",
+      "description": "PNG export of backend modules diagram",
+      "path": "diagrams/backend-modules.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Backend Modules (SVG)",
+      "description": "SVG export of backend modules diagram",
+      "path": "diagrams/backend-modules.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence Login (source)",
+      "description": "Mermaid source for login sequence",
+      "path": "diagrams/seq-login.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: Sequence Login (PNG)",
+      "description": "PNG export of login sequence",
+      "path": "diagrams/seq-login.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence Login (SVG)",
+      "description": "SVG export of login sequence",
+      "path": "diagrams/seq-login.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence Chat Streaming (source)",
+      "description": "Mermaid source for chat streaming sequence",
+      "path": "diagrams/seq-chat-streaming.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: Sequence Chat Streaming (PNG)",
+      "description": "PNG export of chat streaming sequence",
+      "path": "diagrams/seq-chat-streaming.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence Chat Streaming (SVG)",
+      "description": "SVG export of chat streaming sequence",
+      "path": "diagrams/seq-chat-streaming.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence RAG Pipeline (source)",
+      "description": "Mermaid source for RAG sequence",
+      "path": "diagrams/seq-rag-pipeline.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: Sequence RAG Pipeline (PNG)",
+      "description": "PNG export of RAG sequence",
+      "path": "diagrams/seq-rag-pipeline.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence RAG Pipeline (SVG)",
+      "description": "SVG export of RAG sequence",
+      "path": "diagrams/seq-rag-pipeline.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence Note Enhance (source)",
+      "description": "Mermaid source for note enhance sequence",
+      "path": "diagrams/seq-note-enhance.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: Sequence Note Enhance (PNG)",
+      "description": "PNG export of note enhance sequence",
+      "path": "diagrams/seq-note-enhance.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Sequence Note Enhance (SVG)",
+      "description": "SVG export of note enhance sequence",
+      "path": "diagrams/seq-note-enhance.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Deployment (source)",
+      "description": "Mermaid source for dev Compose and future K8s deployment",
+      "path": "diagrams/deployment.mmd",
+      "type": "diagram-source",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Diagram: Deployment (PNG)",
+      "description": "PNG export of deployment diagram",
+      "path": "diagrams/deployment.png",
+      "type": "image/png",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Diagram: Deployment (SVG)",
+      "description": "SVG export of deployment diagram",
+      "path": "diagrams/deployment.svg",
+      "type": "image/svg+xml",
+      "hash": "",
+      "source": "rendered"
+    },
+    {
+      "title": "Script: Mermaid Render",
+      "description": "Renders all .mmd diagrams to PNG/SVG using mermaid-cli",
+      "path": "scripts/mermaid-render.sh",
+      "type": "script",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Script: Bootstrap",
+      "description": "Bootstraps dev environment: env, migrations, seed",
+      "path": "scripts/bootstrap.sh",
+      "type": "script",
+      "hash": "",
+      "source": "manual"
+    },
+    {
+      "title": "Script: E2E Smoke",
+      "description": "Starts compose and runs optional Cypress smoke tests",
+      "path": "scripts/e2e-smoke.sh",
+      "type": "script",
+      "hash": "",
+      "source": "manual"
+    }
+  ],
+  "notes": "Hashes are left empty intentionally; you can populate them by computing sha256 over each file. Run scripts/mermaid-render.sh to generate PNG/SVG assets."
+}

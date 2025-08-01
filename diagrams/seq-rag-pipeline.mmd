@@ -1,0 +1,17 @@
+sequenceDiagram
+  participant B as Browser
+  participant A as API
+  participant S as Storage
+  participant V as Vector DB
+  participant E as Embeddings
+  participant P as Provider
+
+  B->>A: POST /api/retrieval/query {query, folder_id}
+  A->>E: embed(query)
+  E-->>A: query_vector
+  A->>V: search(query_vector, top_k)
+  V-->>A: contexts[]
+  A->>A: optionally BM25 + rerank (cosine)
+  A->>P: prompt with contexts
+  P-->>A: completion (stream or full)
+  A-->>B: response with sources metadata

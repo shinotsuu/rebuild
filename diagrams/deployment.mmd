@@ -1,0 +1,22 @@
+flowchart LR
+  subgraph Docker Compose (dev)
+    FE[frontend: SvelteKit dev server]
+    API[backend: FastAPI + Uvicorn]
+    VDB[(Chroma/Qdrant)]
+    REDIS[(Redis - optional)]
+  end
+  FE --> API
+  API --> VDB
+  API --> REDIS
+
+  subgraph Future K8s
+    Ingress[Ingress]
+    FEsvc[FE Service]
+    APIsvc[API Service]
+    VDBsts[VectorDB StatefulSet]
+    RedisDep[Redis Deployment]
+  end
+  Ingress --> FEsvc
+  Ingress --> APIsvc
+  APIsvc --> VDBsts
+  APIsvc --> RedisDep

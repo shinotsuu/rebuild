@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant B as Browser
+  participant A as API
+  participant P as Provider
+
+  B->>A: POST /api/notes/{id}/enhance {prompt?, model?}
+  A->>A: Load note content, construct prompt
+  A->>P: generate improved content (stream or full)
+  P-->>A: enhanced text
+  A->>A: Save enhanced note version
+  A-->>B: updated note

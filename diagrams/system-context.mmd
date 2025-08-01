@@ -1,0 +1,17 @@
+flowchart LR
+  User[User/Browser]
+  Frontend[SvelteKit Frontend]
+  Backend[FastAPI Backend]
+  SQL[(SQLite/Postgres)]
+  VectorDB[(Chroma/Qdrant/Pinecone/PGVector)]
+  ObjectStore[(Local FS / S3-compatible)]
+  Redis[(Redis - optional)]
+  Providers[[Ollama / OpenAI-compatible / Azure OpenAI]]
+
+  User -->|HTTPS| Frontend
+  Frontend -->|SSR/API| Backend
+  Backend --> SQL
+  Backend --> VectorDB
+  Backend --> ObjectStore
+  Backend -->|optional pub/sub| Redis
+  Backend -->|HTTP(s)/WS| Providers
